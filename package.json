@@ -1,0 +1,56 @@
+{
+  "name": "evaluate-news-nlp-main",
+  "version": "1.0.0",
+  "description": "Evaluate news articles using Natural Language Processing. This project includes webpack configurations, Jest testing, and service worker integration.",
+  "main": "src/server/index.js",
+  "scripts": {
+    "test": "jest --coverage",
+    "build": "webpack --config webpack.prod.js",
+    "dev": "webpack serve --config webpack.dev.js --mode development --open",
+    "start": "node src/server/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/preset-env": "^7.26.0",
+    "babel-jest": "^29.7.0",
+    "babel-loader": "^8.4.1",
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.7.3",
+    "html-webpack-plugin": "^5.6.3",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^29.7.0",
+    "mini-css-extract-plugin": "^2.9.2",
+    "sass": "^1.81.0",
+    "sass-loader": "^12.6.0",
+    "style-loader": "^1.3.0",
+    "terser-webpack-plugin": "^5.3.10",
+    "webpack": "^5.97.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.15.2"
+  },
+  "dependencies": {
+    "axios": "^1.7.8",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "node-fetch": "^3.3.2"
+  },
+  "keywords": [
+    "NLP",
+    "Webpack",
+    "Jest",
+    "Express",
+    "News Evaluation"
+  ],
+  "jest": {
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    },
+    "moduleFileExtensions": [
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  }
+}
